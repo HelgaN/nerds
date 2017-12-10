@@ -1,0 +1,308 @@
+body {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  padding: 0 140px;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-cart {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-navigation a,
+.user-cart a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-cart a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-cart a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.slider-title {
+  padding: 0 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  background-color: #eeeeee;
+}
+
+.slider-info {
+  font: inherit;
+}
+
+.button-more-info {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.button-more-info:hover {
+  background-color: #e74246;
+  }
+
+.button-more-info:active {
+  color: #e48789;
+  background-color: #d7373b;
+}
+
+.main-page {
+  margin: 0;
+  padding: 0 140px;
+}
+
+.product-list {
+  margin: 0;
+  margin-bottom: 82px;
+  padding: 0;
+  list-style: none;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button-order-red {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.button-order-red:hover {
+  background-color: #e74246;
+  }
+
+.button-order-red:active {
+  color: #e27a7c;
+  background-color: #d7373b;
+}
+
+.button-order-green {
+  color: #ffffff;
+  background-color: #00ca74;
+}
+
+.button-order-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-order-green:active {
+  color: #62c192;
+  background-color: #00aa62;
+}
+
+.button-order-yellow {
+  color: #ffffff;
+  background-color: #efc84a;
+}
+
+.button-order-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-order-yellow:active {
+  color: #ebbe6d;
+  background-color: #e5a722;
+}
+
+.lead {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-us-product {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-us-product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features-info {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.table-percent {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.table-indicator {
+  font-size: inherit;
+  line-height: 18px;
+}
+
+.links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links-list a {
+  opacity: 0.2;
+}
+
+.links-list a:hover {
+  opacity: 1;
+}
+
+.links-list a:active {
+  opacity: 0.1;
+}
+
+.footer-contacts {
+  min-height: 418px;
+  padding-top: 54px;
+  margin-bottom: 69px;
+  background-color: #f0ede6;
+  background-image: url("../img/map.jpg");
+}
+
+.contacts-info {
+  box-sizing: border-box;
+  width: 319px;
+  margin: 0 auto 54px 140px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.company-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts-info p {
+  font-size: inherit;
+  line-height: 18px;
+}
+
+.button-contacts {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.button-contacts:hover {
+  background-color: #e74246;
+}
+
+.button-contacts:active {
+  color: #e48789;
+  background-color: #d7373b;
+}
+
+.social-btn-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-btn-list li {
+  width: 81px;
+  height: 81px;
+  background-color: #e1e1e1;
+}
+
+.social-bonus-friendship {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.social-bonus-discount {
+  font-size: inherit;
+  line-height: 22px;
+}
+
+.write-to-us {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.form-contacts label {
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.button-message {
+  padding: 16px 80px;
+  border: none;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.button-message:hover {
+  background-color: #e74246;
+}
+
+.button-message:active {
+  color: #e48789;
+  background-color: #d7373b;
+}
