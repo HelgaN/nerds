@@ -10,7 +10,7 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
       <img src="img/logo.svg" width="160" height="65" alt="Логотип Nerds">
     </a>
       <ul class="site-navigation">
@@ -30,16 +30,68 @@
 
   <section class="filter">
     <h2 class="visually-hidden">Фильтр товаров</h2>
-    <!-- здесь будет форма-->
+    <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend class="form-legend">Стоимость<legend>
+          <input class="form-range" type="range">
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend class="form-legend">Сетка<legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox-circle" id="filter-adaptive" type="checkbox" name="adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox-circle" id="filter-fixed" type="checkbox" name="fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox-circle" id="filter-rubber" type="checkbox" name="rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="form-legend">Особенности<legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages" type="checkbox" name="advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-cart" type="checkbox" name="cart">
+              <label for="filter-cart">Корзина</label>
+            </li>
+          </ul>
+      </fieldset>
+      <button class="button button-form-catalog" type="submit">Показать</button>
+    </form>
   </section>
 
   <section class="catalog-container">
     <h2 class="visually-hidden">Перечень товаров</h2>
     <h3 class="sort-title">Сортировка</h3>
     <ul class="sort-list">
-      <li><a class="sort-active" href="">По цене</a></li>
-      <li><a href="">По типу</a></li>
-      <li><a href="">По названию</a></li>
+      <li><a class="sort-active" href="#">По цене</a></li>
+      <li><a href="#">По типу</a></li>
+      <li><a href="#">По названию</a></li>
     </ul>
     <ul class="catalog-list">
       <li class="catalog-item">
@@ -48,7 +100,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-sedona.jpg" width="" height="" alt="Шаблон Sedona"></a>
+        <a class="item-img" href="sedona-info.html"><img src="img/item-sedona.jpg" width="" height="" alt="Шаблон Sedona"></a>
         <div class="info-item">
           <h3>Sedona</h3>
           <p>Информационный сайт  для туристов</p>
@@ -61,7 +113,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-pink.jpg" width="" height="" alt="Шаблон Pink"></a>
+        <a class="item-img" href="pink-info.html"><img src="img/item-pink.jpg" width="" height="" alt="Шаблон Pink"></a>
         <div class="info-item">
           <h3>Pink App</h3>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -74,7 +126,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-barbershop.jpg" width="" height="" alt="Шаблон Barbershop"></a>
+        <a class="item-img" href="barbershop-info.html"><img src="img/item-barbershop.jpg" width="" height="" alt="Шаблон Barbershop"></a>
         <div class="info-item">
           <h3>Barbershop</h3>
           <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -87,7 +139,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-mishka.jpg" width="" height="" alt="Шаблон Mishka"></a>
+        <a class="item-img" href="mishka-info.html"><img src="img/item-mishka.jpg" width="" height="" alt="Шаблон Mishka"></a>
         <div class="info-item">
           <h3>Mishka</h3>
           <p>Интернет-магазин  вязаных игрушек</p>
@@ -100,7 +152,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-a-plus.jpg" width="" height="" alt="Шаблон A Plus"></a>
+        <a class="item-img" href="aplus-info.html"><img src="img/item-a-plus.jpg" width="" height="" alt="Шаблон A Plus"></a>
         <div class="info-item">
           <h3>A Plus</h3>
           <p>Лендинг курсов повышения квалификации</p>
@@ -113,7 +165,7 @@
             <li></li>
             <li></li>
           </ul>
-        <a class="item-img" href=""><img src="img/item-kvast.jpg" width="" height="" alt="Шаблон Kvast Hover"></a>
+        <a class="item-img" href="kvast-info.html"><img src="img/item-kvast.jpg" width="" height="" alt="Шаблон Kvast Hover"></a>
         <div class="info-item">
           <h3>Kvast</h3>
           <p>Промо-сайт производителя крафтового кваса</p>
@@ -137,14 +189,14 @@
       <h3 class="company-name">NЁRDS DESIGN STUDIO</h3>
       <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <p> тел. +7 (812) 275-75-75</p>
-      <a class="button button-contacts" href="">Напишите нам</a>
+      <a class="button button-contacts" href="write-to-us.html">Напишите нам</a>
     </div>
   </section>
 
   <section class="footer-social">
     <h2 class="visually-hidden">Nerds в социальных сетях</h2>
     <ul class="social-btn-list">
-      <li><a class="social-btn" href=""><span class="visually-hidden">Вконтакте</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <li><a class="social-btn" href="#"><span class="visually-hidden">Вконтакте</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
       <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
         c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
@@ -157,11 +209,11 @@
         s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
         c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
       </svg></a></li>
-      <li><a class="social-btn" href=""><span class="visually-hidden">Фейсбук</span><svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span><svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
       <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
       </svg></a></li>
-      <li><a class="social-btn" href=""><span class="visually-hidden">Инстаграм</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
       <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
         c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
@@ -174,6 +226,27 @@
     </div>
   </section>
 </footer>
+
+<section class="modal modal-contacts">
+  <h2 class="visually-hidden">Форма отправки сообщения</h2>
+  <p class="write-to-us">Напишите нам</p>
+  <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="contacts-name">Ваше имя</label>
+      <input id="contacts-name" type="text" name="your-name" placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p>
+      <label for="contacts-email">Ваш e-mail:</label>
+      <input id="contacts-email" type="email" name="your-email" placeholder="Для отправки ответа">
+    </p>
+    <p>
+      <label for="your-message"></label>
+      <textarea name="message" id="your-message" rows="3" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="button button-message" type="submit">Отправить</button>
+  </form>
+  <button class="modal modal-close" type="button">x</button>
+</section>
 
 </body>
 
