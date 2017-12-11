@@ -43,27 +43,58 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   padding: 0 140px;
-  margin-bottom: 80px;
+  margin: 0px;
   background-color: #eeeeee;
+ }
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 49px;
+  outline: 2px solid red;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
 }
 
 .main-header-logo:hover {
   opacity: 0.3;
 }
 
-.site-navigation,
-.user-cart {
+.site-navigation {
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 2px solid red;
+}
+
+.user-cart {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 2px solid red;
+}
+
+.site-navigation a,
+.user-cart a {
+  display: block;
+  color: #000000;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.site-navigation a,
-.user-cart a {
-  color: #000000;
+.site-navigation a {
+  padding: 25px 0 16px 0;
+  outline: 2px solid red;
 }
 
 .site-navigation a:hover,
@@ -305,4 +336,119 @@ input[type="radio"].visually-hidden {
 .button-message:active {
   color: #e48789;
   background-color: #d7373b;
+}
+
+.inner-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.sort-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-list a:hover {
+  opacity: 0.6;
+}
+
+.sort-list .sort-active,
+.sort-list a:active {
+  opacity: 1;
+}
+
+.catalog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.frame-top {
+  width: 360px;
+  height: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #e9e9e9;
+}
+
+.frame-top:hover {
+  background-color: #4d4d4d;
+}
+
+.info-item {
+  display: none;
+  position: relative;
+}
+
+.catalog-item:hover .info-item {
+  display: block;
+  position: absolute;
+  padding: 43px 80px;
+  background-color: #eeeeee;
+}
+
+.info-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.info-item p {
+  font-size: inherit;
+  line-height: 18px;
+}
+
+.button-buy {
+  padding: 16px 60px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-item a {
+  font-size: inherit;
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: #acacac;
+  background-color: #d5d5d5;
+}
+
+.pagination-item .pagination-item-current {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
 }
