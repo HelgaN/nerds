@@ -86,25 +86,31 @@
       </fieldset>
       <button class="button button-form-catalog" type="submit">Показать</button>
     </form>
-  </section>
+
 
   <section class="catalog-container">
     <h2 class="visually-hidden">Перечень товаров</h2>
-    <h3 class="sort-title">Сортировка</h3>
+    <div class="sort-container">
+    <h3 class="sort-title">Сортировать:</h3>
     <ul class="sort-list">
       <li><a class="sort-active" href="#">По цене</a></li>
       <li><a href="#">По типу</a></li>
       <li><a href="#">По названию</a></li>
     </ul>
+    <div class="sort-triangle">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
     <ul class="catalog-list">
       <li class="catalog-item">
-        <ul class="frame-top">
+        <ul class="frame-top  active-frame-top">
             <li></li>
             <li></li>
             <li></li>
           </ul>
         <a class="item-img" href="sedona-info.html"><img src="img/item-sedona.jpg" width="" height="" alt="Шаблон Sedona"></a>
-        <div class="info-item">
+        <div class="info-item info-item-active">
           <h3>Sedona</h3>
           <p>Информационный сайт  для туристов</p>
           <a href="user-cart.html" class="button button-buy">9 900 руб.</a>
@@ -180,8 +186,9 @@
       <li class="pagination-item"><a class="pagination-item-current">1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item"><a href="#">следующая</a></li>
+      <li class="pagination-item pagination-item-next"><a href="#">следующая</a></li>
     </ul>
+  </section>
   </section>
 </main>
 
