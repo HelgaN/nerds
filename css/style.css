@@ -571,7 +571,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
 }
 
-.filter {
+.inner-container {
   display: flex;
   justify-content: space-between;
   padding: 0 140px;
@@ -579,9 +579,149 @@ input[type="radio"].visually-hidden {
 
 .form-filter {
   width: 260px;
+  margin-top: 57px;
 }
 
-.catalog-container {
+.form-filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 57px;
+  border: none;
+}
+
+.form-filter fieldset:nth-child(2) {
+  margin-bottom: 45px;
+}
+
+.form-filter fieldset:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.form-legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.filter-list-grid,
+.filter-list-properties {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-option {
+  padding-top: 19px;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.button-form-catalog {
+  width: 260px;
+  padding: 16px 0;
+  font-family: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.button-form-catalog:hover {
+  background-color: #dfdfdf;
+}
+
+.button-form-catalog:active {
+  color: #a9a9a9;
+  background-color: #d5d5d5;
+}
+
+ .catalog-container {
   width: 760px;
 }
 
