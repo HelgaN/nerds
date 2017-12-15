@@ -72,10 +72,22 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.user-cart {
+.user-cart-container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
+  width: 160px;
   max-width: 160px;
+  margin-left: auto;
+}
+
+.user-cart-container svg {
+  position: absolute;
+  top: 33px;
+  left: 46px;
+}
+
+.user-cart {
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -84,7 +96,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a,
 .user-cart a {
-  display: block;
+  display: flex;
   padding: 25px 0 16px 0;
   color: #000000;
   line-height: 30px;
@@ -351,8 +363,9 @@ input[type="radio"].visually-hidden {
 }
 
 .principles {
+  width: 660px;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .about-us-product {
@@ -363,6 +376,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-product-list {
+
   margin: 0;
   padding: 0;
   padding-left: 35px;
@@ -370,7 +384,18 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-product-list li {
+  position: relative;
   margin-bottom: 24px;
+}
+
+.about-us-product-list li::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 2px;
+  top: 48%;
+  left: -35px;
+  background-color: #fb565a;
 }
 
 .about-us-features {
@@ -397,8 +422,14 @@ input[type="radio"].visually-hidden {
 }
 
 .table-percent td {
-  width: 100px;
-  padding-right: 12px;
+  width: 120px;
+}
+
+.table-percent span {
+  position: relative;
+  vertical-align: baseline;
+  top: -14px;
+  font-size: 26px;
 }
 
 .table-indicator {
@@ -408,22 +439,35 @@ input[type="radio"].visually-hidden {
 
 .table-indicator td {
   width: 100px;
-  padding-top: 22px;
+  padding-top: 12px;
 }
 
 .links-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-bottom: 80px;
-  padding: 45px 0 37px 0;
+  padding: 47px 30px 37px 30px;
   border-bottom: 2px solid #eeeeee;
   list-style: none;
 }
 
+.links-list li {
+  position: relative;
+}
+
 .links-list a {
+  margin-right: 100px;
   opacity: 0.2;
+}
+
+.links-list li:nth-child(3n) a {
+  margin-right: 120px;
+}
+
+.links-list li:nth-child(4n) a {
+  margin-right: 0px;
 }
 
 .links-list a:hover {
@@ -432,6 +476,36 @@ input[type="radio"].visually-hidden {
 
 .links-list a:active {
   opacity: 0.1;
+}
+
+.decor-1::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 5px;
+  right: 47px;
+  background-color: #eeeeee;
+}
+
+.decor-2::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 15px;
+  right: 56px;
+  background-color: #eeeeee;
+}
+
+.decor-3::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -5px;
+  right: 60px;
+  background-color: #eeeeee;
 }
 
 .main-footer {
@@ -513,6 +587,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 70px;
   border-radius: 50%;
   background-color: #e1e1e1;
+}
+
+.social-btn:hover {
+  background-color: #e74246;
+}
+
+.social-btn:active {
+  background-color: #d7373b;
+}
+
+.social-btn:active path {
+  fill: #e37376;
 }
 
 .social-bonus-friendship {
