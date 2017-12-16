@@ -94,19 +94,32 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-navigation li,
+.user-cart li {
+  padding: 25px 0 13px 0;
+}
+
 .site-navigation a,
 .user-cart a {
   display: flex;
-  padding: 25px 0 16px 0;
   color: #000000;
-  line-height: 30px;
+  line-height: 33px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.user-cart a {
+  padding-left: 40px;
 }
 
 .site-navigation a:hover,
 .user-cart a:hover {
   color: #fb565a;
+}
+
+.site-nav-active {
+  border-bottom: 3px solid red;
+  margin-bottom: -3px;
 }
 
 .site-navigation a:active,
