@@ -630,7 +630,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contacts {
-  display: none;
+  display: block;
 }
 
 .write-to-us {
@@ -989,6 +989,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 27px;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.25);
+}
+
 .frame-top {
   display: flex;
   align-items: center;
@@ -1013,7 +1017,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.frame-top:hover,
+.catalog-item:hover .frame-top,
  .active-frame-top {
   background-color: #4d4d4d;
 }
@@ -1028,8 +1032,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   box-sizing: border-box;
   min-height: 230px;
-  padding: 29px 80px 37px 80px;
-  bottom: 10px;
+  padding: 29px 80px 47px 80px;
+  bottom: 0px;
   background-color: #eeeeee;
 }
 
