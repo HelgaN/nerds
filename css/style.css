@@ -951,8 +951,28 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-triangle {
+  display: flex;
+  justify-content: flex-end;
   width: 60px;
-  outline: 2px solid green;
+}
+
+.sort-button-down svg {
+  transform: rotate(180deg);
+}
+
+.sort-button-up {
+  margin-left: 15px;
+}
+
+.sort-button-up:hover polygon,
+.sort-button-down:hover polygon {
+  fill: #a6a6a6;
+}
+
+.sort-button-up:active polygon,
+.sort-button-active polygon,
+.sort-button-active:hover polygon {
+  fill: #231f20;
 }
 
 .catalog-list {
