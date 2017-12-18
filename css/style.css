@@ -1125,6 +1125,10 @@ input[type="radio"].visually-hidden {
   background-color: #e9e9e9;
 }
 
+.frame-top li {
+  cursor: pointer;
+}
+
 .frame-top li:first-child {
   margin-left: 15px;
 }
@@ -1144,10 +1148,15 @@ input[type="radio"].visually-hidden {
 
 .info-item {
   display: none;
+  width: 361px;
+}
+
+.info-item-name a  {
+  color: #000000;
 }
 
 .catalog-item:hover .info-item,
-.info-item-active {
+.catalog-item .info-item-active {
   display: block;
   position: absolute;
   box-sizing: border-box;
@@ -1169,6 +1178,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-item p {
+  width: 230px;
   padding: 0;
   margin: 0;
   text-align: center;
