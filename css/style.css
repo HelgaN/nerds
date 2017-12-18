@@ -630,6 +630,46 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
 }
 
+@keyframes modal-animation {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(40px);
+  }
+
+  90% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
  position: absolute;
  background-color: #ffffff;
@@ -647,6 +687,13 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
+  animation-name: modal-animation;
+  animation-duration: 0.8s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.8s;
 }
 
 .write-to-us {

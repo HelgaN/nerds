@@ -1,43 +1,44 @@
 var contact = document.querySelector(".button-contacts");
 var popup = document.querySelector(".modal-contacts");
-var open = document.querySelector(".modal-close");
+var close = document.querySelector(".modal-close");
 
 var form = document.querySelector(".form-contacts");
-var username = document.getElementById("contacts-name");
-var usermail = document.getElementById("contacts-email");
+var userName = document.getElementById("contacts-name");
+var userMail = document.getElementById("contacts-email");
 var mess = document.getElementById("your-message");
 
-var storage = localStorage.getItem("username");
-var storage2 = localStorage.getItem("usermail");
+var storage = localStorage.getItem("userName");
+var storage2 = localStorage.getItem("userMail");
 
 contact.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
 
-  if (storage) {
-    username.value = storage;
-    usermail.focus();
-  } else if (storage2) {
-    usermail.value = storage2;
+  if (storage2 && storage) {
+    userMail.value = storage2;
+    userName.value = storage;
     mess.focus();
+  } else if (storage) {
+    userName.value = storage;
+    userMail.focus();
   }
     else {
-    username.focus();
+    userName.focus();
   }
 });
 
-open.addEventListener("click", function(evt) {
+close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!username.value || !usermail.value) {
+  if (!userName.value || !userMail.value) {
     evt.preventDefault();
-    alert("Необходимо ввести имя и email!");
+    alert("Введите имя и email!");
   } else {
-    localStorage.setItem("username", username.value);
-    localStorage.setItem("usermail", usermail.value);
+    localStorage.setItem("userName", userName.value);
+    localStorage.setItem("userMail", userMail.value);
   }
 });
 
@@ -45,6 +46,6 @@ window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
-    }
+      }
   }
 });
