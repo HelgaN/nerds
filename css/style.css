@@ -637,12 +637,16 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contacts {
-  display: block;
+  display: none;
   width: 960px;
   box-sizing: border-box;
   top: 1708px;
   left: 240px;
   padding: 70px 102px 70px 100px;
+}
+
+.modal-show {
+  display: block;
 }
 
 .write-to-us {
