@@ -530,10 +530,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   min-height: 360px;
   padding-top: 54px;
-  margin-bottom: 69px;
+  margin-bottom: 71px;
   background-color: #f0ede6;
-/*  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;*/
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .footer-contacts iframe {
@@ -837,7 +837,7 @@ input[type="radio"].visually-hidden {
 .form-filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 59px;
   border: none;
 }
 
@@ -1002,7 +1002,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -2px;
   left: -34px;
   width: 19px;
   height: 19px;
@@ -1013,7 +1013,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  top: -3px;
+  top: -1px;
   left: -28px;
   width: 16px;
   height: 6px;
@@ -1067,7 +1067,7 @@ input[type="radio"].visually-hidden {
 .sort-container {
   display: flex;
   align-items: center;
-  min-height: 133px;
+  padding: 53px 0;
 }
 
 .sort-title {
@@ -1145,7 +1145,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 
 .catalog-item:hover {
@@ -1156,7 +1156,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   width: 360px;
-  height: 40px;
+  height: 41px;
   border-radius: 5px 5px 0 0;
   list-style: none;
   padding: 0;
@@ -1187,28 +1187,34 @@ input[type="radio"].visually-hidden {
 
 .info-item {
   display: none;
-  width: 361px;
 }
 
 .info-item-name a  {
   color: #000000;
 }
 
+.item-img {
+  display: block;
+  width: 358px;
+  height: 574px;
+  border: 1px solid #e5e5e5;
+}
+
 .catalog-item:hover .info-item,
 .catalog-item .info-item-active {
+  width: 361px;
   display: block;
   position: absolute;
   box-sizing: border-box;
-  min-height: 230px;
-  padding: 29px 80px 47px 80px;
-  bottom: 0px;
+  padding: 30px 80px 43px 80px;
+  bottom: 0;
   background-color: #eeeeee;
 }
 
 .info-item h3 {
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   text-align: center;
   font-size: 18px;
   line-height: 30px;
@@ -1224,6 +1230,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   font-size: inherit;
   line-height: 18px;
+}
+
+.info-item .descr-narrow {
+  width: 182px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-buy {
