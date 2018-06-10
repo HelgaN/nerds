@@ -24,10 +24,8 @@ toggleMin.addEventListener("mousedown", function(evt) {
 
   var onMouseMoveMin = function(evtMove) {
     evtMove.preventDefault();
-
     var coordsMax = getCoords(toggleMax);
     var coordsMin = getCoords(toggleMin);
-
     var barCoords = getCoords(bar);
     var shiftMin;
 
@@ -40,23 +38,19 @@ toggleMin.addEventListener("mousedown", function(evt) {
       }
 
     } else {
-
       if (evtMove.pageX > startCoordsMin) {
         shiftMin = evtMove.pageX - startCoordsMin;
       } else {
         shiftMin = startCoordsMin - evtMove.pageX;
         /*  startCoordsMin = shiftMin;*/
       }
-
       toggleMin.style.left = shiftMin + "px";
       bar.style.left = shiftMin + "px";
-      bar.style.width = parseInt(toggleMax.offsetLeft) - shiftMin + "px"/*(parseInt(barWidth - shiftMin) + "px")*/;
-
+      bar.style.width = parseInt(toggleMax.offsetLeft) - shiftMin + "px" /*(parseInt(barWidth - shiftMin) + "px")*/ ;
       if (toggleMin.style.left > 220) {
         toggleMin.style.left = "220px";
         bar.style.width = "220px"
       }
-
       minPrice.value = (parseInt(toggleMin.style.left) * 100);
     }
   }
@@ -71,13 +65,9 @@ toggleMin.addEventListener("mousedown", function(evt) {
 });
 
 
-
-
-
 toggleMax.addEventListener("mousedown", function(evt2) {
   evt2.preventDefault();
   var startCoordsMax = evt2.pageX - bar.offsetLeft - bar.offsetWidth; /* чтобы не скакол курсор при первом клике */
-
   var onMouseMoveMax = function(evt2) {
     evt2.preventDefault();
     var coordsMax = getCoords(toggleMax);
@@ -87,19 +77,16 @@ toggleMax.addEventListener("mousedown", function(evt2) {
     if (coordsMax.left - toggleMax.offsetWidth <= coordsMin.left) {
       if (evt2.pageX - bar.offsetLeft > startCoordsMax) {
         shiftMax = evt2.pageX - startCoordsMax;
-
         toggleMax.style.left = shiftMax + "px";
         bar.style.width = shiftMax + "px";
         if (parseInt(toggleMax.style.left) > 220 || parseInt(bar.style.width) > 220) {
           toggleMax.style.left = "220px";
           bar.style.width = "220px";
         }
-
         if (toggleMax.style.left < 20) {
           toggleMax.style.left = "20px";
         }
       }
-
     } else {
       if (evt2.pageX > startCoordsMax) {
         shiftMax = evt2.pageX - startCoordsMax;
@@ -108,10 +95,8 @@ toggleMax.addEventListener("mousedown", function(evt2) {
         shiftMax = startCoordsMax - evt2.pageX;
         /*startCoordsMax = shiftMax;*/
       }
-
       toggleMax.style.left = shiftMax + "px";
       bar.style.width = toggleMax.offsetLeft - toggleMin.offsetLeft + "px";
-
       /*bar.style.width = parseInt(shiftMax / 220 * 100).toFixed() + "%";*/
 
       if (parseInt(toggleMax.style.left) > 220 || parseInt(bar.style.width) > 220 && toggleMin.style.left < 20) {
@@ -120,12 +105,10 @@ toggleMax.addEventListener("mousedown", function(evt2) {
       }
 
       maxPrice.value = (parseInt(toggleMax.style.left) * 100);
-      if(parseInt(bar.style.width) > 220 ) {
+      if (parseInt(bar.style.width) > 220) {
         bar.style.width = "220px";
       }
-
     }
-
   }
 
   var onMouseUp = function(evtUp) {
